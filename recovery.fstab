@@ -19,5 +19,7 @@
 /data ext4 /dev/block/rknand_userdata
 /system ext4 /dev/block/rknand_system
 /cache ext4 /dev/block/rknand_cache
+/sdcard_sd vfat /dev/block/rknand_user flags=display="internal_sd";storage;wipeingui
+/usb_otg auto /dev/block/sda1 flags=display="usb_storage";storage;wipeingui;removable
 /external_sd vfat /dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
 
